@@ -1,4 +1,4 @@
-# HE IPv6 Tunnel Setup on a VPS - Summary
+# HE IPv6 Tunnel Setup on a VPS
 
 ## 1. Prerequisites
 
