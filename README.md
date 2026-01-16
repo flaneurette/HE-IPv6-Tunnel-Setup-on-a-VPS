@@ -97,8 +97,8 @@ Edit `/etc/apache2/ports.conf`:
 ```apache
 Listen 0.0.0.0:80
 Listen 0.0.0.0:443
-Listen <CLIENT_IPV6>:80
-Listen <CLIENT_IPV6>:443
+Listen [<CLIENT_IPV6>]:80
+Listen [<CLIENT_IPV6>]:443
 ```
 
 * Using the specific IPv6 address avoids `[::]:80` bind issues
