@@ -37,6 +37,10 @@ Edit `tunnel.sh` then `chmod +x tunnel.sh` and run it: `./tunnel.sh`, or follow 
 
 > NOTE: Tunnel.sh assumes you already have a up and running ip6tables, including default policies such as DROP by default, ALLOW after specific rules. If not, set that up first.
 
+> NOTE: Tunnel.sh will remove UFW if you have it, due to netfilter-persistent
+
+Or follow manual steps below:
+
 ---
 
 ## 3. Create HE tunnel interface (if not already created)
