@@ -10,7 +10,7 @@ HE_SERVER_IPV4="102.2.3.4"
 # Your VPS public IPv4
 YOUR_VPS_IPV4="202.2.3.4"
 
-# Client IPv6 address (from HE panel)
+# Client IPv6 block address (from HE panel)
 CLIENT_IPV6="2001:470:abcd:1234::2"
 
 # Server IPv6 address (from HE panel)
