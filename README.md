@@ -31,6 +31,12 @@ modprobe sit
 
 ---
 
+# Tunnel.sh
+
+Edit `tunnel.sh` then `chmod +x tunnel.sh` and run it: `./tunnel.sh`, or follow steps below for manual set-up.
+
+---
+
 ## 3. Create HE tunnel interface (if not already created)
 
 ```bash
@@ -40,13 +46,6 @@ ip tunnel add he-ipv6 mode sit remote <HE_SERVER_IP> local <YOUR_VPS_IPV4> ttl 2
 ---
 
 ## 4. Assign IPv6 address to the tunnel
-
-```bash
-ip addr add <CLIENT_IPV6>/64 dev he-ipv6
-ip link set he-ipv6 up
-```
-
-* Example:
 
 ```bash
 ip addr add <CLIENT_IPV6>/64 dev he-ipv6
