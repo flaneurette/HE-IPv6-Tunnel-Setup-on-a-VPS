@@ -96,8 +96,7 @@ ip6tables -A INPUT -p tcp -d $CLIENT_IPV6/$SUBNETS --dport 80 -j ACCEPT
 ip6tables -A INPUT -p tcp -d $CLIENT_IPV6/$SUBNETS --dport 443 -j ACCEPT
 # ip6tables -A INPUT -p tcp -d $SSH_IPV6 --dport 22 -j ACCEPT
 
-apt install iptables-persistent
-netfilter-persistent save
+sudo iptables-save > /etc/iptables/rules.v4
 
 sleep 1
 
